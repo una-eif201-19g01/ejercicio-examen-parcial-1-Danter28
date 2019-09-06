@@ -1,10 +1,3 @@
-//
-// Created by Maikol Guzman  on 2019-09-05.
-//
-
-#ifndef EJERCICIOSPUNTEROSVECTORES_CAMA_H
-#define EJERCICIOSPUNTEROSVECTORES_CAMA_H
-
 #include <ostream>
 #include "string"
 
@@ -19,7 +12,7 @@ public:
 
     virtual ~Cama();
 
-    const std::string &getCodigo() const;
+    const std::string &getCodigo() ;
 
     void setCodigo(const std::string &codigo);
 
@@ -33,3 +26,4 @@ public:
 
 
 #endif //EJERCICIOSPUNTEROSVECTORES_CAMA_H
+
