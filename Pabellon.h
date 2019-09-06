@@ -14,7 +14,7 @@ class Pabellon {
     char genero;
     int tamano;
     int cantidad;
-    Cama** cama;
+    Cama** camas;
 
 public:
     Pabellon();
