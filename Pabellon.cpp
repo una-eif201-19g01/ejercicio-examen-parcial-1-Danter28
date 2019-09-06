@@ -16,7 +16,7 @@ Pabellon::Pabellon(char id, char genero, int tamano) : id(id), genero(genero), t
 	}
 }
 
-Pabellon::~Pabellon(){}
+Pabellon::~Pabellon() { delete[]camas; }
 
 Cama* Pabellon::obtenerCama(int numCama) const { camas[numCama]->toString(); }
 
@@ -39,7 +39,7 @@ void Pabellon::eliminarCama(Cama* cama) {
 void Pabellon::eliminarTodasLasCamas() { 
 	for (cantidad; cantidad >= 0; cantidad--) 
 	{ camas[cantidad]->~Cama(); }
-		 delete camas; 
+	delete[]camas;
 }
 
 char Pabellon::getId() const { return id; }
